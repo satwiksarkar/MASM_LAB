@@ -66,7 +66,7 @@ PRINT_LOOP:
     MOV AL, [SI]        ; Load the modified byte (e.g., 25)
     XOR AH, AH          ; Clear AH (Set AH to 00H)
     
-    ; AAM (ASCII Adjust for Multiply) divides AL by 10.
+    ; AAM (ASCII Adjust for Multiply) divides AL by 10.(decimal)
     ; It puts the quotient (Tens) in AH, and remainder (Ones) in AL.
     AAM                 ; E.g., if AL=25, AAM makes AH=02, AL=05
     
